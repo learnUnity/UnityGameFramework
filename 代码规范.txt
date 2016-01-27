@@ -1,0 +1,47 @@
+接口:	I开头					IName
+Model:	Model结尾				ItemTipsModel表示属于ItemTipsUI的Model
+事件:	Event结尾				UpdateCellEvent
+委托:	Deleg结尾				updateDelege
+字段名: m_开头					m_nameTx
+属性:	帕斯卡命名法			Name
+
+UI命名规范:
+	PL		面板									结尾
+	Bar		显示条(比如人物信息条)					结尾
+	Btn		按钮									开头
+	IM		图标									结尾
+	IN		输入框									结尾
+	Tx		标签(经常改变的)						结尾
+	LB		描述的标签(一旦赋值不会被改变)			结尾
+	Bar		进度条,经验条							结尾
+	
+	比如:
+		面板	RolePL		m_rolePL		
+		按钮	BtnSell		m_btnSell
+	
+方法命名:
+	TestCom结尾			测试方法,方便测试某一个组件,正式打包可以直接去掉该方法
+	On开头				1. 通过某某事件触发, 2. 服务器触发回调客户端触发的方法
+	
+	比如
+		addItemTestCom			这个结尾的方法可以直接被删除，方便程序测试
+		OnAddItem				表示事件响应了
+		
+脚本常量存放:
+	TagDefine			Tag常量
+	CharDefine			文本字面量
+	
+============================================================================
+UI层:
+	一个UI 对应 Model
+		比如:
+			ItemTips 		ItemTipsModel
+		
+	
+
+
+
+
+
+
+
